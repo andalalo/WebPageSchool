@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    	<!---Standar setup for our website-->
+	<meta charset="UTF-8">
+	<title>dropdown menu</title>
+	<style>
+	html {
+		background: #5e6170;
+	}
+
+	body {
+		font: 100% Georgia, "Times New Roman", Times, serif;
+		line-height: 1.4;
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 20em;
+	}
+
+	h1, h2, h3 {
+		font-size: 2.4em;
+		font-weight: normal;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+		color: #751a1a;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	/**/
+	/**/
+	.cf:before, .cf:after {
+		content:"";
+		display:table;
+	}
+
+	.cf:after {
+		clear:both;
+	}
+
+	/* */
+	.cf {
+		zoom:1;
+	}
+        
+
+      /*horizontal menu styles */  
+	nav {
+		background: #591919;
+		height: 2.3em;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: left;
+	}
+	ul {
+		background: #912727;
+		height: 2em;
+		width: 100%;
+	}
+	li {
+		position: relative;
+	}
+	li a {
+		display: block;
+		line-height: 2em;
+		padding: 0 1em;
+		color: white;
+		text-decoration: none;
+	}
+	li a:hover, .topmenu li:hover > a {
+		background: #591919;
+		height: 2em;
+		padding-top: .3em;
+		position: relative;
+		top: -.3em;
+		border-radius: .3em .3em 0 0;
+	}
+	.current, a:hover.current, .topmenu li:hover a.current {
+		background: #403636;
+		color: #eee;
+		padding-top: .3em;
+		border-radius: .3em .3em 0 0;
+		position: relative;
+		top: -.3em;
+		border-bottom: .3em solid #591919;
+		cursor: default;
+	}
+	/*dropdown menu styles*/
+
+	ul.submenu {
+		float: none;
+		background: #912727;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 2em;
+		left: -9000em;
+		max-height: 0;
+		-webkit-transition: max-height 0.5s ease-in-out;
+		-moz-transition: max-height 0.5s ease-in-out;
+		-o-transition: max-height 0.5s ease-in-out;
+		-ms-transition: max-height 0.5s ease-in-out;
+		transition: max-height 0.5s ease-in-out;
+	}
+
+	ul.submenu li {
+		float: none;
+	}
+
+	.topmenu li:hover ul {
+		left: 0;
+		max-height: 20em;
+        width: 8.8em;
+	}
+
+	ul.submenu li a {
+		border-bottom: 1px solid white;
+		padding: .2em 1em;
+		white-space: nowrap;
+	}
+	ul.submenu li:last-child a {
+		border-bottom: none;
+	}
+	ul.submenu li a:hover {
+		background: #912727;
+		height: 2em;
+		padding-top: .2em;
+		top: 0;
+		border-radius: 0;
+	}
+
+
+ /*Komedie Movies*/
+ /*Komedie Movies*/
+ /*Number 1, 21 Jump Street*/
+        #Jumpstreet {
+            position: relative;
+            left: 200px;
+            top:  -210px;
+            width: 50%;
+            color: white;
+            }
+        #Jumpstreetdiv {
+            position: absolute;
+            }
+/*Number 2, Scarymovie*/
+        #Scarymovie {
+            position: relative;
+            left: 200px;
+            top:  -210px;
+            width: 50%;
+            color: white;
+            }
+        #Scarymoviediv {
+            position: absolute;
+            }
+ /*Number 3, The Hangover*/
+        #Hangover {
+            position: relative;
+            left: 200px;
+            top:  -210px;
+            width: 50%;
+            color: white;
+            }
+        #Hangoverdiv {
+            position: absolute;
+            }
+ /*Number 4, Zohan*/
+        #Zohan {
+            position: relative;
+            left: 200px;
+            top:  -210px;
+            width: 50%;
+            color: white;
+            }
+        #Zohandiv {
+            position: absolute;
+            }
+/*Number 5, Dictator*/
+        #Dictator {
+            position: relative;
+            left: 200px;
+            top:  -190px;
+            width: 50%;
+            color: white;
+            }
+        #Dictatordiv {
+            position: absolute;
+            }
+        
+
+
+	</style>
+</head>
+<body>
+    
+<img src="Logo.png" alt="Logo" width="250"
+         height="80">
+	
+	<h3>
+    
+    </h3>
+	<nav class="cf">
+		<nav class="cf">
+			<ul class="topmenu">
+				<li><a href="index.html" title="Home page" class="current">Home</a></li>
+				<li><a href="" title="Movies">Movies</a>
+					<ul class="submenu">
+                        
+                        <li><a href="horror.html" title="Horror">Horror</a></li>
+                        
+                        <li><a href="komedie.html" title="Komedie">Komedie</a></li>
+                        
+                        <li><a href="action.html" title="Action">Action</a></li>
+                        
+                        <li><a href="krim.html" title="Krim">Krim</a></li>
+                        
+                        <li><a href="klassikere.html" title="Klassikere">Klassikere</a></li>
+                        
+                        <li><a href="sci-fi.html" title="Sci-fi">Sci-fi</a></li>
+                        
+                        <li><a href="romantikk.html" title="Romantikk">Romantikk</a></li>
+                        
+                        <li><a href="fantasy.html" title="Fantasy">Fantasy</a></li>
+                        
+					</ul>
+				</li>
+				<li><a href="index.html" title="Series">Series</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="recent articles">Coming soon</a></li>
+					</ul>
+                    	</li>
+				<li><a href="index.html" title="Documentaries">Documentaries</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="recent articles">Coming soon</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html" title="More about us">About</a></li>
+				<li><a href="https://www.imdb.com" title="IMDb">IMDb</a>
+				</li>
+			</ul>
+		</nav>
+	</nav>
+    <h5><font size="8" color= White>Komedie</font></h5>
+
+
+<!---Number 1, Jumpstreet --->    
+<!---Number 1, Jumpstreet --->  
+<!---Number 1, Jumpstreet --->  
+    <h2 id="21 Jump street">21 Jump street (2012)</h2>
+           <p>
+            <img src="21Jumpstreet.jpg" alt="Jumpstreet" width="150"
+         height="200">
+              </p>
+            <div id="Jumpstreetdiv">
+                <p id="Jumpstreet">
+
+                    In high school, Schmidt (Jonah Hill) was a dork and Jenko (Channing Tatum) was the popular jock. After graduation, both of them joined the police force and ended up as partners riding bicycles in the city park. Since they are young and look like high school students, they are assigned to an undercover unit to infiltrate a drug ring that is supplying high school students synthetic drugs.
+                </p>
+                 
+     </div>
+<!---Number 2, Scary movie --->  
+<!---Number 2, Scary movie --->  
+<!---Number 2, Scary movie --->  
+    <h2 id="Scary movie">Scary Movie (2000)</h2>
+           <p>
+            <img src="ScaryMovie.jpg" alt="Scary movie!" width="150"
+         height="200">
+              </p>
+            <div id="Scarymoviediv">
+                <p id="Scarymovie">
+
+                    A group of teenagers including Cindy Campbell and Bobby Prinze, accidentally hit a man when driving, and dispose of the body, but now they are being stalked by a very recognisable masked killer. The victim count increases, whilst Cindy must survive the carnage that has she has seen in so many films before.
+                </p>
+                 
+     </div>
+<!---Number 3, The Hangover ---> 
+<!---Number 3, The Hangover ---> 
+<!---Number 3, The Hangover ---> 
+    <h2 id="The Hangover">The Hangover (2009)</h2>
+           <p>
+            <img src="Thehangover.jpg" alt="The Hangover" width="150"
+         height="200">
+              </p>
+            <div id="Hangoverdiv">
+                <p id="Hangover">
+
+                    Handlingen er satt stort sett i Las Vegas, og handler om fire menn på utdrikningslag like før den ene av dem skal gifte seg. Neste morgen finner de ikke den kommende brudgommen, og ingen husker hva som har skjedd i løpet av natten. De har kort tid på seg til å få nøstet opp hendelsesforløpet og finne brudgommen, da bryllupet er kun timer unna. 
+                </p>
+                 
+     </div>
+<!---Number 4, You Dont mess with the zohan ---> 
+<!---Number 4, You Dont mess with the zohan ---> 
+<!---Number 4, You Dont mess with the zohan ---> 
+    <h2 id="You Dont mess with the zohan">You Dont Mess With The zohan (2008)</h2>
+           <p>
+            <img src="Zohan.jpg" alt="Zohan" width="150"
+         height="200">
+              </p>
+            <div id="Zohandiv">
+                <p id="Zohan">
+
+                    Zohan tar New York-kvinnene med storm ettersom han byr på mer enn bare en fiks frisyre. Noen terrorister tror at Zohan jobber "undercover" og forsøker å tvinge han til å være med i deres nettverk. Hans gamle agenttakter sitter imidlertid i, så de må tenke seg om to ganger før de "krøller" med Zohan!
+                </p>
+                 
+     </div>
+<!---Number 5, The Dictator  --->
+<!---Number 5, The Dictator  ---> 
+<!---Number 5, The Dictator  ---> 
+    <h2 id="The Dictator">The Dictator (2012)</h2>
+           <p>
+            <img src="Thedictator.jpg" alt="The Dictator" width="150"
+         height="200">
+              </p>
+            <div id="Dictatordiv">
+                <p id="Dictator">
+
+                    The Republic of Wadiya is ruled by an eccentric and oppressive leader named Hafez Aladeen. Aladeen is summoned to New York to a UN assembly to address concerns about his country's nuclear weapons program, but the trip goes awry.
+                </p>
+<!---Number 6 and futher--->
+<!---Number 6 and futher--->
+<!---Number 6 and futher--->
+    <p>
+        <font size="5" color= White>
+        6. Grown Ups (2020)<br/>7. Superbad (2007)<br/>8. Dumb and dumber (1994)<br/>9. The Wolf of Wall Street(2013)<br/>10. Alene hjemme(1990)<br/>11. Yes Man (2008)<br/>12. American Pie (1999)<br/>13. Borat (2006)<br/>14. Monty Pythons Life of Brian (1979)<br/>15. War Dogs (2016)<br/>16. The Girl next door (2004)<br/>17. Shaun of the dead (2004)<br/>18. Project X (2012)<br/>19. The Babysitter (2017)<br/>20. Happy Death Day (2017)
+        </font>
+                </p>
+                 
+     </div>
+ </body>

@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!---Standar setup for our website-->
+	<meta charset="UTF-8">
+	<title>dropdown menu</title>
+	<style>
+	html {
+		background: #5e6170;
+	}
+
+	body {
+		font: 100% Georgia, "Times New Roman", Times, serif;
+		line-height: 1.4;
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 20em;
+	}
+
+	h1, h2, h3 {
+		font-size: 2.4em;
+		font-weight: normal;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+		color: #751a1a;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	/**/
+	/**/
+	.cf:before, .cf:after {
+		content:"";
+		display:table;
+	}
+
+	.cf:after {
+		clear:both;
+	}
+
+	/**/
+	.cf {
+		zoom:1;
+	}
+	/*horizontal menu styles*/
+    /*horizontal menu styles*/
+	nav {
+		background: #591919;
+		height: 2.3em;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: left;
+	}
+	ul {
+		background: #912727;
+		height: 2em;
+		width: 100%;
+	}
+	li {
+		position: relative;
+	}
+	li a {
+		display: block;
+		line-height: 2em;
+		padding: 0 1em;
+		color: white;
+		text-decoration: none;
+	}
+	li a:hover, .topmenu li:hover > a {
+		background: #591919;
+		height: 2em;
+		padding-top: .3em;
+		position: relative;
+		top: -.3em;
+		border-radius: .3em .3em 0 0;
+	}
+	.current, a:hover.current, .topmenu li:hover a.current {
+		background: #403636;
+		color: #eee;
+		padding-top: .3em;
+		border-radius: .3em .3em 0 0;
+		position: relative;
+		top: -.3em;
+		border-bottom: .3em solid #591919;
+		cursor: default;
+	}
+	/*dropdown menu styles*/
+    /*dropdown menu styles*/
+	ul.submenu {
+		float: none;
+		background: #912727;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 2em;
+		left: -9000em;
+		max-height: 0;
+		-webkit-transition: max-height 0.5s ease-in-out;
+		-moz-transition: max-height 0.5s ease-in-out;
+		-o-transition: max-height 0.5s ease-in-out;
+		-ms-transition: max-height 0.5s ease-in-out;
+		transition: max-height 0.5s ease-in-out;
+	}
+
+	ul.submenu li {
+		float: none;
+	}
+
+	.topmenu li:hover ul {
+		left: 0;
+		max-height: 20em;
+        width: 8.8em;
+	}
+
+	ul.submenu li a {
+		border-bottom: 1px solid white;
+		padding: .2em 1em;
+		white-space: nowrap;
+	}
+	ul.submenu li:last-child a {
+		border-bottom: none;
+	}
+	ul.submenu li a:hover {
+		background: #912727;
+		height: 2em;
+		padding-top: .2em;
+		top: 0;
+		border-radius: 0;
+	}
+        
+    /* Elements id */
+        #itmovie {
+            position: relative;
+            left: 200px;
+            top: -200px;
+            width: 50%;
+            color: white;
+            }
+        #itmoviediv {
+            position: absolute;
+    	}
+        
+        #JWmovie {
+            position: relative;
+            left: 200px;
+            top:  -180px;
+            width: 50%;
+            color: white;
+            }
+        #Avengersmoviediv {
+            position: absolute;
+            }
+        
+        #Avengersmovie {
+            position: relative;
+            left: 200px;
+            top:  -180px;
+            width: 50%;
+            color: white;
+            }
+        #JKmoviediv {
+            position: absolute;
+            }
+        
+/* Dropdown meny links to.. */
+/* Dropdown meny links to.. */
+        
+	</style>
+</head>
+<body>
+    
+<img src="Logo.png" alt="Logo" width="250"
+         height="80">
+	<nav class="cf">
+		<nav class="cf">
+			<ul class="topmenu">
+				<li><a href="index.html" title="Home page" class="current">Home</a></li>
+                
+				<li><a href="" title="Movies">Movies</a>
+					<ul class="submenu">
+                        
+                        <li><a href="horror.html" title="Horror">Horror</a></li>
+                        
+                        <li><a href="Komedie.html" title="Komedie">Komedie</a></li>
+                        
+                        <li><a href="action.html" title="Action">Action</a></li>
+                        
+                        <li><a href="krim.html" title="Krim">Krim</a></li>
+                        
+                        <li><a href="klassikere.html" title="Klassikere">Klassikere</a></li>
+                        
+                        <li><a href="sci-fi.html" title="Sci-fi">Sci-fi</a></li>
+                        
+                        <li><a href="romantikk.html" title="Romantikk">Romantikk</a></li>
+                        
+                        <li><a href="fantasy.html" title="Fantasy">Fantasy</a></li>
+					</ul>
+				</li>
+				<li><a href="" title="Series">Series</a>
+					<ul class="submenu">
+						<li><a href="" title="Series comming soon">Coming soon</a></li>
+					</ul>
+                    	</li>
+				<li><a href="index.html" title="Documentaries">Documentaries</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="Documentaries coming soon">Coming soon</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html" title="More about us">About</a></li>
+            
+        	
+                 <!--Search engine not yet availbale--->      
+            <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search for Movies">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+                </button>
+                    </div>
+                </div>
+            </ul>
+		</nav> 
+	</nav>
+   
+        <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Where to find us</h3>
+    <p> 
+        <font color= white size=5>
+        We are 4 students from Norway, that are studying on (Høyskolen i Molde), We are studying IT (Informasjons Teknologi). And this website was a task we had, tocreate a website that contained images and other pages. So we came up with the idea of making a Movie website. 
+        Hope you enjoy the Movies we picked out.
+        <br/>
+        Best regards Gruppe 7.
+            <br/><br/><br/><br/>
+            This is a map of the school.
+            
+            
+        </font>
+        
+      </p>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+function initMap() {
+  /* The location of Hi molde*/
+  var Him = {lat: 62.736441, lng: 7.109214};
+  
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: Him});
+  /* The marker, positioned at Hi molde skole */
+  var marker = new google.maps.Marker({position: Him, map: map});
+}   
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBONoCBjWzNEFPwh86AoPAoEO37HV46HQA&callback=initMap">
+    </script>         
+     </body>
+        

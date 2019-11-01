@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!---Standar setup for our website-->
+	<meta charset="UTF-8">
+	<title>dropdown menu</title>
+	<style>
+	html {
+		background: #5e6170;
+	}
+
+	body {
+		font: 100% Georgia, "Times New Roman", Times, serif;
+		line-height: 1.4;
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 20em;
+	}
+
+	h1, h2, h3 {
+		font-size: 2.4em;
+		font-weight: normal;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+		color: #751a1a;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	/**/
+	/**/
+	.cf:before, .cf:after {
+		content:"";
+		display:table;
+	}
+
+	.cf:after {
+		clear:both;
+	}
+
+	/**/
+	.cf {
+		zoom:1;
+	}
+	/*horizontal menu styles*/
+    /*horizontal menu styles*/
+	nav {
+		background: #591919;
+		height: 2.3em;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: left;
+	}
+	ul {
+		background: #912727;
+		height: 2em;
+		width: 100%;
+	}
+	li {
+		position: relative;
+	}
+	li a {
+		display: block;
+		line-height: 2em;
+		padding: 0 1em;
+		color: white;
+		text-decoration: none;
+	}
+	li a:hover, .topmenu li:hover > a {
+		background: #591919;
+		height: 2em;
+		padding-top: .3em;
+		position: relative;
+		top: -.3em;
+		border-radius: .3em .3em 0 0;
+	}
+	.current, a:hover.current, .topmenu li:hover a.current {
+		background: #403636;
+		color: #eee;
+		padding-top: .3em;
+		border-radius: .3em .3em 0 0;
+		position: relative;
+		top: -.3em;
+		border-bottom: .3em solid #591919;
+		cursor: default;
+	}
+	/*dropdown menu styles*/
+    /*dropdown menu styles*/
+	ul.submenu {
+		float: none;
+		background: #912727;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 2em;
+		left: -9000em;
+		max-height: 0;
+		-webkit-transition: max-height 0.5s ease-in-out;
+		-moz-transition: max-height 0.5s ease-in-out;
+		-o-transition: max-height 0.5s ease-in-out;
+		-ms-transition: max-height 0.5s ease-in-out;
+		transition: max-height 0.5s ease-in-out;
+	}
+
+	ul.submenu li {
+		float: none;
+	}
+
+	.topmenu li:hover ul {
+		left: 0;
+		max-height: 20em;
+        width: 8.8em;
+	}
+
+	ul.submenu li a {
+		border-bottom: 1px solid white;
+		padding: .2em 1em;
+		white-space: nowrap;
+	}
+	ul.submenu li:last-child a {
+		border-bottom: none;
+	}
+	ul.submenu li a:hover {
+		background: #912727;
+		height: 2em;
+		padding-top: .2em;
+		top: 0;
+		border-radius: 0;
+	}
+        
+    /* Elements id */
+        #itmovie {
+            position: relative;
+            left: 200px;
+            top: -200px;
+            width: 50%;
+            color: white;
+            }
+        #itmoviediv {
+            position: absolute;
+    	}
+        
+        #JWmovie {
+            position: relative;
+            left: 200px;
+            top:  -180px;
+            width: 50%;
+            color: white;
+            }
+        #Avengersmoviediv {
+            position: absolute;
+            }
+        
+        #Avengersmovie {
+            position: relative;
+            left: 200px;
+            top:  -180px;
+            width: 50%;
+            color: white;
+            }
+        #JKmoviediv {
+            position: absolute;
+            }
+        
+/* Dropdown meny links to.. */
+/* Dropdown meny links to.. */
+        
+	</style>
+</head>
+<body>
+    
+<img src="Logo.png" alt="Logo" width="250"
+         height="80">
+	<nav class="cf">
+		<nav class="cf">
+			<ul class="topmenu">
+				<li><a href="index.html" title="Home page" class="current">Home</a></li>
+                
+				<li><a href="" title="Movies">Movies</a>
+					<ul class="submenu">
+                        
+                        <li><a href="horror.html" title="Horror">Horror</a></li>
+                        
+                        <li><a href="Komedie.html" title="Komedie">Komedie</a></li>
+                        
+                        <li><a href="action.html" title="Action">Action</a></li>
+                        
+                        <li><a href="krim.html" title="Krim">Krim</a></li>
+                        
+                        <li><a href="klassikere.html" title="Klassikere">Klassikere</a></li>
+                        
+                        <li><a href="sci-fi.html" title="Sci-fi">Sci-fi</a></li>
+                        
+                        <li><a href="romantikk.html" title="Romantikk">Romantikk</a></li>
+                        
+                        <li><a href="fantasy.html" title="Fantasy">Fantasy</a></li>
+					</ul>
+				</li>
+				<li><a href="index.html" title="Series">Series</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="Series comming soon">Coming soon</a></li>
+					</ul>
+                    	</li>
+				<li><a href="index.html" title="Documentaries">Documentaries</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="Documentaries coming soon">Coming soon</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html" title="More about us">About</a></li>
+            
+        	
+                 <!--Search engine not yet availbale--->      
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Search for Movies">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+                    </div>
+                </div>
+            </ul>
+		</nav> 
+	</nav>
+    
+    <!--- Movies on frontpage--->
+    <!--- Movies on frontpage--->
+    <h2 id="ITMOVIE">It: Chapter Two (2019)</h2>
+           <p>
+                <img src="Klovn.jpg" alt="Klovn" width="150"
+                height="200">
+              </p>
+            <div id="itmoviediv">
+                <p id="itmovie">
+
+                    It Chapter Two is a 2019 American supernatural horror film based on Stephen King's 1986 novel of the same name.Twenty-seven years after their first encounter with the terrifying Pennywise, the Losers Club have grown up and moved away, until a devastating phone call brings them back.
+                </p>
+                 
+     </div>
+    
+    <h2 id="JWMOVIE">John Wick: Chapter 3 (2019)</h2>  
+              <p>
+                <img src="JohnWick.jpg" alt="JhonWick" width="150"
+                height="200">
+              </p>
+         <div id="JWmoviediv">
+              <p id="JWmovie">
+
+                    John Wick is on the run after killing a member of the international assassin's guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
+               </p>
+                
+         </div>
+    <h2 id="AMovie">Avengers: Endgame (2019)</h2>  
+           <p>
+                <img src="Endgame.jpg" alt="Avengers" width="150"
+                height="200">
+              </p>
+            <div id="Avengersmoviediv">
+                <p id="Avengersmovie">
+
+                    After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.
+                </p>
+         </div>
+                
+     </body>
+   

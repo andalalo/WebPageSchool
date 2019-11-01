@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    	<!---Standar setup for our website-->
+	<meta charset="UTF-8">
+	<title>dropdown menu</title>
+	<style>
+	html {
+		background: #5e6170;
+	}
+
+	body {
+		font: 100% Georgia, "Times New Roman", Times, serif;
+		line-height: 1.4;
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 20em;
+	}
+
+	h1, h2, h3 {
+		font-size: 2.4em;
+		font-weight: normal;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+		color: #751a1a;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	/**/
+	/**/
+	.cf:before, .cf:after {
+		content:"";
+		display:table;
+	}
+
+	.cf:after {
+		clear:both;
+	}
+
+	/* */
+	.cf {
+		zoom:1;
+	}
+        
+
+      /*horizontal menu styles */  
+	nav {
+		background: #591919;
+		height: 2.3em;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: left;
+	}
+	ul {
+		background: #912727;
+		height: 2em;
+		width: 100%;
+	}
+	li {
+		position: relative;
+	}
+	li a {
+		display: block;
+		line-height: 2em;
+		padding: 0 1em;
+		color: white;
+		text-decoration: none;
+	}
+	li a:hover, .topmenu li:hover > a {
+		background: #591919;
+		height: 2em;
+		padding-top: .3em;
+		position: relative;
+		top: -.3em;
+		border-radius: .3em .3em 0 0;
+	}
+	.current, a:hover.current, .topmenu li:hover a.current {
+		background: #403636;
+		color: #eee;
+		padding-top: .3em;
+		border-radius: .3em .3em 0 0;
+		position: relative;
+		top: -.3em;
+		border-bottom: .3em solid #591919;
+		cursor: default;
+	}
+	/*dropdown menu styles*/
+
+	ul.submenu {
+		float: none;
+		background: #912727;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 2em;
+		left: -9000em;
+		max-height: 0;
+		-webkit-transition: max-height 0.5s ease-in-out;
+		-moz-transition: max-height 0.5s ease-in-out;
+		-o-transition: max-height 0.5s ease-in-out;
+		-ms-transition: max-height 0.5s ease-in-out;
+		transition: max-height 0.5s ease-in-out;
+	}
+
+	ul.submenu li {
+		float: none;
+	}
+
+	.topmenu li:hover ul {
+		left: 0;
+		max-height: 20em;
+        width: 8.8em;
+	}
+
+	ul.submenu li a {
+		border-bottom: 1px solid white;
+		padding: .2em 1em;
+		white-space: nowrap;
+	}
+	ul.submenu li:last-child a {
+		border-bottom: none;
+	}
+	ul.submenu li a:hover {
+		background: #912727;
+		height: 2em;
+		padding-top: .2em;
+		top: 0;
+		border-radius: 0;
+	}
+
+
+ /*Romantikk Movies*/
+ /*Romantikk Movies*/
+ /*Number 1, Titanic*/
+        #Titanic {
+            position: relative;
+            left: 200px;
+            top:  -230px;
+            width: 50%;
+            color: white;
+            }
+        #Titanicdiv {
+            position: absolute;
+            }
+/*Number 2, TheNotebook*/
+        #Thenotebook {
+            position: relative;
+            left: 200px;
+            top:  -240px;
+            width: 50%;
+            color: white;
+            }
+        #Thenotebookdiv {
+            position: absolute;
+            }
+ /*Number 3, SafeHaven*/
+        #SafeHaven {
+            position: relative;
+            left: 200px;
+            top:  -190px;
+            width: 50%;
+            color: white;
+            }
+        #SafeHavendiv {
+            position: absolute;
+            }
+ /*Number 4, Holiday*/
+        #Holiday {
+            position: relative;
+            left: 200px;
+            top:  -190px;
+            width: 50%;
+            color: white;
+            }
+        #Holidaydiv {
+            position: absolute;
+            }
+/*Number 5, DearJohn*/
+        #Dearjohn {
+            position: relative;
+            left: 200px;
+            top:  -190px;
+            width: 50%;
+            color: white;
+            }
+        #Dearjohndiv {
+            position: absolute;
+            }
+        
+
+
+	</style>
+</head>
+<body>
+    
+<img src="Logo.png" alt="Logo" width="250"
+         height="80">
+	
+	<h3>
+    
+    </h3>
+	<nav class="cf">
+		<nav class="cf">
+			<ul class="topmenu">
+				<li><a href="index.html" title="Home page" class="current">Home</a></li>
+				<li><a href="" title="Movies">Movies</a>
+					<ul class="submenu">
+                        
+                        <li><a href="horror.html" title="Horror">Horror</a></li>
+                        
+                        <li><a href="komedie.html" title="Komedie">Komedie</a></li>
+                        
+                        <li><a href="action.html" title="Action">Action</a></li>
+                        
+                        <li><a href="krim.html" title="Krim">Krim</a></li>
+                        
+                        <li><a href="klassikere.html" title="Klassikere">Klassikere</a></li>
+                        
+                        <li><a href="sci-fi.html" title="Sci-fi">Sci-fi</a></li>
+                        
+                        <li><a href="romantikk.html" title="Romantikk">Romantikk</a></li>
+                        
+                        <li><a href="fantasy.html" title="Fantasy">Fantasy</a></li>
+                        
+					</ul>
+				</li>
+				<li><a href="index.html" title="Series">Series</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="recent articles">Coming soon</a></li>
+					</ul>
+                    	</li>
+				<li><a href="index.html" title="Documentaries">Documentaries</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="recent articles">Coming soon</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html" title="More about us">About</a></li>
+				<li><a href="https://www.imdb.com" title="IMDb">IMDb</a>
+				</li>
+			</ul>
+		</nav>
+	</nav>
+    <h5><font size="8" color= White>Romanitikk</font></h5>
+
+
+<!---Number 1, Titanic --->    
+<!---Number 1, Titanic --->  
+<!---Number 1, Titanic --->  
+    <h2 id="Titanic1">Titanic (1993)</h2>
+           <p>
+            <img src="Titanic..jpg" alt="Titanic" width="150"
+         height="200">
+              </p>
+            <div id="Titanicdiv">
+                <p id="Titanic">
+
+                    84 years later, a 100 year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.
+                </p>
+                 
+     </div>
+<!---Number 2, TheNotebook --->  
+<!---Number 2, TheNotebook --->  
+<!---Number 2, TheNotebook --->  
+    <h2 id="The Notebook">The Notebook (2004)</h2>
+           <p>
+            <img src="Notebook.jpg" alt="The Notebook!" width="150"
+         height="200">
+              </p>
+            <div id="Thenotebookdiv">
+                <p id="Thenotebook">
+
+                   The movie starts in a nursing home with Duke reading to an older woman, whose memory is slipping from her more and more everyday. Duke reads the story of two lovers who meet in the south at a carnival. Allie was 17. A city girl from money, and Noah was a country boy. The two spend the whole summer together but Allie is forced to move and go to college although she was willing to give it up for Noah. Noah writes Allie 365 letters and she never gets them. So he restores the house him and Allie went to one night out of 'labor of love'. Seven years pass and Allie meets and falls in love with a wealthy soldier Lon. When seeing Noah's picture in the paper, Allie is drawn back to him. They spent a few days together and she doesn't want to leave. Allie has to choose between her fiancé and Noah.
+                </p>
+                 
+     </div>
+<!---Number 3, SafeHaven ---> 
+<!---Number 3, SafeHaven ---> 
+<!---Number 3, SafeHaven ---> 
+    <h2 id="SafeHaven1">Safe Haven (2013)</h2>
+           <p>
+            <img src="SafeHaven..jpg" alt="Safe Haven" width="150"
+         height="200">
+              </p>
+            <div id="SafeHavendiv">
+                <p id="SafeHaven">
+
+                   A young woman with a mysterious past lands in Southport, North Carolina where her bond with a widower forces her to confront the dark secret that haunts her.
+                </p>
+                 
+     </div>
+<!---Number 4, Holiday ---> 
+<!---Number 4, Holiday ---> 
+<!---Number 4, Holiday ---> 
+    <h2 id="Holiday1">Holiday (2006)</h2>
+           <p>
+            <img src="Holiday..jpg" alt="Holiday" width="150"
+         height="200">
+              </p>
+            <div id="Holidaydiv">
+                <p id="Holiday">
+
+                  Two women troubled with guy-problems swap homes in each other's countries, where they each meet a local guy and fall in love.
+                </p>
+                 
+     </div>
+<!---Number 5, Dear John  --->
+<!---Number 5, Dear John  ---> 
+<!---Number 5, Dear John  ---> 
+    <h2 id="Dear John1">Dear John (2010)</h2>
+           <p>
+            <img src="Dearjohn..jpg" alt="Dear John" width="150"
+         height="200">
+              </p>
+            <div id="Dearjohndiv">
+                <p id="Dearjohn">
+
+                South Carolina US Army Special operations soldier John is on summer leave from his German base, visiting his widowed father. Being gallant on the pier, he befriends college student Savannah, a college student, and her buddies, a terminal father and his angelic son. John falls in love with Savannah, who diagnoses his beloved, gentle but weird father as mildly autistic. He plans not to sign up again, but 9/11 changes that, and she won't wait idly while their friends desperately need help.
+                </p>
+<!---Number 6 and futher--->
+<!---Number 6 and futher--->
+<!---Number 6 and futher--->
+    <p>
+        <font size="5" color= White>
+        6. Beauty and the beast (2017)<br/>7. Fifty shades(2010)<br/>8. Dirty dancing (1987)<br/>9. The last song(2010)<br/>10. Letters to juliet(2010)<br/>11. The best of me(2014)<br/>12. A walk to remember (2002)<br/>
+        </font>
+                </p>
+                 
+     </div>
+ </body>

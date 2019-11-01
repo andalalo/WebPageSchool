@@ -1,0 +1,181 @@
+#logoimage {
+    width: 250px;
+    height: 80px;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.topdiv {
+    position: relative;
+      
+}
+
+.tobbar {
+    position: fixed;
+    z-index: 1;
+    background: grey;
+    max-width: 920px;
+    width: 1000px;
+    margin: -20px 20px 0px -10px;
+}
+
+.navbar {
+    height: 35px;
+    background: #591919;
+}
+
+.navbar ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+.navbar ul {
+    background: #912727;
+    height: 30px;
+    width: 100%;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar li a {
+    display: block;
+    line-height: 35px;
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover, .topmenu li:hover > a {
+    background: #591919;
+    height: 30px;
+    padding-top: 10px;
+    position: relative;
+    top: -4px;
+    border-radius: 4px 4px 0px 0px;    
+}
+
+.current, a:hover.current, .topmenu li:hover a.current {
+    background: #403636;
+    color: #eee;
+    padding-top: 4px;
+    border-radius: 4px 4px 0px 0px;
+    position: relative;
+    top: -4px;
+    border-bottom: 4px solid #591919;
+    cursor: default;
+}
+
+ul.submenu {
+    float: none;
+    background: #912727;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 35px;
+    left: -700px;
+    max-height: 0;
+    z-index: 10;
+}
+
+ul.submenu li {
+    float: none;
+}
+
+.topmenu li:hover ul {
+    left: 0px;
+    max-height: 400px;
+    width: 150px;
+}
+
+ul.submenu li a {
+    border-bottom: white solid 1px;
+    padding: 2px 10px;
+    white-space: nowrap;
+}
+
+ul.submenu li:last-child a {
+    border-bottom: none;
+}
+
+ul.submenu li a:hover {
+    background: #823838;
+    height: 35px;
+    padding-top: 2px;
+    top: 0px;
+    border-radius: 0px;
+    z-index: 9;
+}
+
+body {
+    background: #33333d;
+    font-size: 20px;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    background: grey;
+    padding: 10px;
+}
+
+.movies img {
+    width: 200px;
+    height: 300px;
+    border: solid black 3px;
+    padding: 0px 0px 0px 0px;
+}
+
+.movies {
+    position: relative;
+    background: grey;
+    margin-top: 130px;
+}
+
+.movieposterdiv {
+    position: relative;
+    padding: 0px 0px 0px 0px;
+}
+
+.movietextdiv {
+    position: relative;
+    top: -260px;
+}
+            
+.movietext {
+    position: absolute;
+    width: 70%;
+    left: 250px;
+    top: 50px;
+}
+
+#movietitle{
+    position: absolute;
+    top: -70px;
+    left: 250px;
+    font-size: 30px;
+    text-shadow: 20px;
+}
+
+.secondarydiv h4 {
+    position: absolute;
+    left: 260px;
+    top: -20px;
+    font-size: 25px;
+    color: #363535;
+}
+
+#secondarydiv{
+    border: solid 2px black;
+}
+
+#restmovie {
+    position: absolute;
+    top: 100px;
+    padding-top: 100px;
+}
+            

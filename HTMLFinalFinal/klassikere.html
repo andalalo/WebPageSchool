@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    	<!---Standar setup for our website-->
+	<meta charset="UTF-8">
+	<title>dropdown menu</title>
+	<style>
+	html {
+		background: #5e6170;
+	}
+
+	body {
+		font: 100% Georgia, "Times New Roman", Times, serif;
+		line-height: 1.4;
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 20em;
+	}
+
+	h1, h2, h3 {
+		font-size: 2.4em;
+		font-weight: normal;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+		color: #751a1a;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	/**/
+	/**/
+	.cf:before, .cf:after {
+		content:"";
+		display:table;
+	}
+
+	.cf:after {
+		clear:both;
+	}
+
+	/* */
+	.cf {
+		zoom:1;
+	}
+        
+
+      /*horizontal menu styles */  
+	nav {
+		background: #591919;
+		height: 2.3em;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: left;
+	}
+	ul {
+		background: #912727;
+		height: 2em;
+		width: 100%;
+	}
+	li {
+		position: relative;
+	}
+	li a {
+		display: block;
+		line-height: 2em;
+		padding: 0 1em;
+		color: white;
+		text-decoration: none;
+	}
+	li a:hover, .topmenu li:hover > a {
+		background: #591919;
+		height: 2em;
+		padding-top: .3em;
+		position: relative;
+		top: -.3em;
+		border-radius: .3em .3em 0 0;
+	}
+	.current, a:hover.current, .topmenu li:hover a.current {
+		background: #403636;
+		color: #eee;
+		padding-top: .3em;
+		border-radius: .3em .3em 0 0;
+		position: relative;
+		top: -.3em;
+		border-bottom: .3em solid #591919;
+		cursor: default;
+	}
+	/*dropdown menu styles*/
+
+	ul.submenu {
+		float: none;
+		background: #912727;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 2em;
+		left: -9000em;
+		max-height: 0;
+		-webkit-transition: max-height 0.5s ease-in-out;
+		-moz-transition: max-height 0.5s ease-in-out;
+		-o-transition: max-height 0.5s ease-in-out;
+		-ms-transition: max-height 0.5s ease-in-out;
+		transition: max-height 0.5s ease-in-out;
+	}
+
+	ul.submenu li {
+		float: none;
+	}
+
+	.topmenu li:hover ul {
+		left: 0;
+		max-height: 20em;
+        width: 8.8em;
+	}
+
+	ul.submenu li a {
+		border-bottom: 1px solid white;
+		padding: .2em 1em;
+		white-space: nowrap;
+	}
+	ul.submenu li:last-child a {
+		border-bottom: none;
+	}
+	ul.submenu li a:hover {
+		background: #912727;
+		height: 2em;
+		padding-top: .2em;
+		top: 0;
+		border-radius: 0;
+	}
+
+
+ /*Klassikere */
+ /*Klassikere*/
+ /*Number 1, The Godfather*/
+        #TheGodfather {
+            position: relative;
+            top: -10px;
+            left: 10px;
+            width: 50%;
+            color: white;
+            }
+        #TheGodfatherdiv {
+            position: absolute;
+            }
+        #TheGodfathertxt {
+            position: relative;
+            top: -270px;
+            left: 200px;
+            width: 75%;
+            color: white;
+        }
+/*Number 2, Forrest Gump*/
+        #ForrestGump {
+            position: relative;
+            left: 10px;
+            top:  0px;
+            width: 50%;
+            color: white;
+            }
+        #ForrestGumpdiv {
+            position: absolute;
+            }
+        #ForrestGumptxt {
+            position: relative;
+            top: -270px;
+            left: 200px;
+            width: 75%; 
+            color:white;
+        }
+ /*Number 3, Back To The Future*/
+        #BTTF {
+            position: relative;
+            left: 10px;
+            top:  0px;
+            width: 50%;
+            color: white;
+            }
+        #BTTFdiv {
+            position: absolute;
+            }
+        #BTTFtxt {
+            position: relative;
+            left: 200px;
+            top: -270px;
+            width: 75%;
+            color: white;
+        }
+ /*Number 4, Indiana Jones*/
+        #IndianaJones {
+            position: relative;
+            left: 10px;
+            top:  0px;
+            width: 50%;
+            color: white;
+            }
+        #IndianaJonesdiv {
+            position: absolute;
+            }
+        #IndianaJonestxt{
+            position: relative;
+            top: -270px;
+            left: 200px;
+            width: 75%;
+            color:white;
+        }
+/*Number 5, Alien*/
+        #Alien {
+            position: relative;
+            left: 10px;
+            top:  0px;
+            width: 50%;
+            color: white;
+            }
+        #Aliendiv {
+            position: absolute;
+            }
+        #Alientxt {
+            position: relative;
+            top: -270px;
+            left:200px;
+            width:70%;
+            color: white;
+        }
+
+
+	</style>
+</head>
+<body>
+    
+<img src="Logo.png" alt="Logo" width="250"
+         height="80">
+	
+	<h3>
+    
+    </h3>
+	<nav class="cf">
+		<nav class="cf">
+			<ul class="topmenu">
+				<li><a href="index.html" title="Home page" class="current">Home</a></li>
+                
+				<li><a href="" title="Movies">Movies</a>
+					<ul class="submenu">
+                        
+                        <li><a href="horror.html" title="Horror">Horror</a></li>
+                        
+                        <li><a href="komedie.html" title="Komedie">Komedie</a></li>
+                        
+                        <li><a href="action.html" title="Action">Action</a></li>
+                        
+                        <li><a href="krim.html" title="Krim">Krim</a></li>
+                        
+                        <li><a href="klassikere.html" title="Klassikere">Klassikere</a></li>
+                        
+                        <li><a href="sci-fi.html" title="Sci-fi">Sci-fi</a></li>
+                        
+                        <li><a href="romantikk.html" title="Romantikk">Romantikk</a></li>
+                        
+                        <li><a href="fantasy.html" title="Fantasy">Fantasy</a></li>
+                        
+					</ul>
+				</li>
+				<li><a href="index.html" title="Series">Series</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="recent articles">Coming soon</a></li>
+					</ul>
+                    	</li>
+				<li><a href="index.html" title="Documentaries">Documentaries</a>
+					<ul class="submenu">
+						<li><a href="index.html" title="recent articles">Coming soon</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html" title="More about us">About</a></li>
+				<li><a href="https://www.imdb.com" title="IMDb">IMDb</a>
+				</li>
+			</ul>
+		</nav>
+	</nav>
+    <h5><font size="8" color= White>Klassikere</font></h5>
+
+
+<!---Number 1, The Godfather --->    
+<!---Number 1, The Godfather --->  
+<!---Number 1, The Godfather --->  
+    <h2 id="The Godfather">The Godfather (1972)</h2>
+           <p>
+            <img src="The%20Godfather.jpg" alt="The Godfather" width="160"
+         height="230">
+              </p>
+            <div id="TheGodfatherdiv">
+                <p id="TheGodfathertxt">
+
+                   The Godfather "Don" Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WW II Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart.
+                </p>
+                 
+     </div>
+<!---Number 2, Forrest Gump --->  
+<!---Number 2, Forrest Gump --->  
+<!---Number 2, Forrest Gump --->  
+    <h2 id="ForrestGump">Forrest Gump (1994)</h2>
+           <p>
+            <img src="Forrest%20Gump.jpg" alt="Forrest Gump" width="160"
+         height="230">
+              </p>
+            <div id="ForrestGumpdiv">
+                <p id="ForrestGumptxt">
+                Forrest Gump is a simple man with a low I.Q. but good intentions. He is running through childhood with his best and only friend Jenny. His 'mama' teaches him the ways of life and leaves him to choose his destiny. Forrest joins the army for service in Vietnam, finding new friends called Dan and Bubba, he wins medals, creates a famous shrimp fishing fleet, inspires people to jog, starts a ping-pong craze, creates the smiley, writes bumper stickers and songs, donates to people and meets the president several times. However, this is all irrelevant to Forrest who can only think of his childhood sweetheart Jenny Curran, who has messed up her life. Although in the end all he wants to prove is that anyone can love anyone. 
+                </p>
+                 
+     </div>
+<!---Number 3,Back To The Future  ---> 
+<!---Number 3,Back To The Future  ---> 
+<!---Number 3,Back To The Future  ---> 
+    <h2 id="BTTF">Back To The Future (1985)</h2>
+           <p>
+            <img src="Back%20To%20The%20Future.jpg" alt="Back To The Future" width="160"
+         height="230">
+              </p>
+            <div id="BTTFdiv">
+                <p id="BTTFtxt">
+
+                    Marty McFly, a typical American teenager of the Eighties, is accidentally sent back to 1955 in a plutonium-powered DeLorean "time machine" invented by a slightly mad scientist. During his often hysterical, always amazing trip back in time, Marty must make certain his teenage parents-to-be meet and fall in love - so he can get back to the future.
+                </p>
+                 
+     </div>
+<!---Number 4, Indiana Jones ---> 
+<!---Number 4, Indiana Jones ---> 
+<!---Number 4, Indiana Jones ---> 
+    <h2 id="Indiana Jones">Indiana Jones and the Temple of Doom (1984)</h2>
+           <p>
+            <img src="Indiana%20Jones.jpg" alt="Indiana Jones and the Temple of Doom" width="160"
+         height="230">
+              </p>
+            <div id="IndianaJonesdiv">
+                <p id="IndianaJonestxt">
+
+                    A prequel to Raiders of the lost Arc (1981) set in 1935, the year before, the professor, archaeologist and adventurer by the name of Indiana Jones is back in action in his latest adventure. This time he teams up with a nightclub singer named Wilhelmina "Willie" Scott and a twelve-year-old Chinese boy named Short Round. They end up in a small distressed village in India, where the people believe that evil spirits have taken all their children away after a sacred precious stone was stolen. They also discover the great mysterious terror surrounding a booby-trapped temple known as the Temple of Doom. Thuggee is beginning to attempt to rise once more, believing that with the power of all five Sankara stones they can rule the world. It's all up to Indiana to put an end to the Thuggee campaign, rescue the lost children, win the girl and conquer the Temple of Doom.
+                </p>
+                 
+     </div>
+<!---Number 5, Alien --->
+<!---Number 5, Alien ---> 
+<!---Number 5, Alien ---> 
+    <h2 id="Alien">Alien (1979)</h2>
+           <p>
+            <img src="Alien.jpg" alt="Alien" width="160"
+         height="230">
+              </p>
+            <div id="Aliendiv">
+                <p id="Alientxt">
+
+                    In the distant future, the crew of the commercial spaceship Nostromo are on their way home when they pick up a distress call from a distant moon. The crew are under obligation to investigate and the spaceship descends on the moon afterwards. After a rough landing, three crew members leave the spaceship to explore the area on the moon. At the same time as they discover a hive colony of some unknown creature, the ship's computer deciphers the message to be a warning, not a distress call. When one of the eggs is disturbed, the crew realizes that they are not alone on the spaceship and they must deal with the consequences. 
+                </p> 
+<!---Number 6 and futher--->
+<!---Number 6 and futher--->
+<!---Number 6 and futher--->
+    <p>
+        <font size="5" color= White>
+            6. Dirty Dancing (1987)<br/>7. Jaws (1975) <br/>8. The Wizard of OZ (1939)<br/>9. Godzilla (1954)<br/>10. Friday the 13th (1980) <br/>11. Scarface (1983) <br/>12. Star Wars: A new hope (1977) <br/></font>
+                </p>
+                 
+     </div>
+ </body>
